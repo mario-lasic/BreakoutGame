@@ -13,3 +13,9 @@ class Paddle(Turtle):
         self.shapesize(stretch_len=5, stretch_wid=1)
         self.penup()
         self.setpos((0,-350))
+
+    def go_left(self):
+        self.setx(self.xcor() - 10)
+
+    def go_right(self):
+        self.setx(self.xcor() + 10)
