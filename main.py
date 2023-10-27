@@ -1,5 +1,6 @@
 from turtle import Screen, Turtle, TurtleScreen
 from paddle import Paddle
+from ball import Ball
 
 screen = Screen()
 screen.bgcolor("ivory")
@@ -8,7 +9,7 @@ screen.title("Breakout")
 screen.listen()
 
 main_paddle = Paddle()
-
+ball = Ball()
 screen.onkeypress(main_paddle.go_left, "Left")
 screen.onkeypress(main_paddle.go_right, "Right")
 

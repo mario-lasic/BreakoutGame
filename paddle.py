@@ -10,7 +10,7 @@ class Paddle(Turtle):
     ) -> None:
         super().__init__(shape, undobuffersize, visible)
         self.shape("square")
-        self.shapesize(stretch_len=5, stretch_wid=1)
+        self.shapesize(stretch_len=6, stretch_wid=0.5)
         self.penup()
         self.setpos((0,-350))
 
