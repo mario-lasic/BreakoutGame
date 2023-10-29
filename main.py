@@ -36,6 +36,10 @@ while game_is_on:
             bricks.bricks.remove(brick)
             ball.bounce_y()
 
+    if ball.ycor() < - 380:
+        game_is_on = False
+
+
     if len(bricks.bricks) == 0:
         game_is_on = False
 screen.exitonclick()
