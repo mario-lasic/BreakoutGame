@@ -18,4 +18,5 @@ class Bricks():
         new_brick.color("red")
         new_brick.penup()
         new_brick.goto(position)
+        new_brick.shapesize(stretch_wid=1, stretch_len=3)
         self.bricks.append(new_brick)
